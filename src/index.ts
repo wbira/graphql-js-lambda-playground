@@ -1,2 +1,3 @@
-const message: string = 'Hello world from ts';
-console.log(message);
+import { getTodo } from './queries/get-todo';
+
+console.log(getTodo);

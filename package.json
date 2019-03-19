@@ -3,7 +3,22 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "build-gql": "node ./scripts/build-gql.js --output=src/graphql.models.ts --queries=./src/**/*.gql.ts --endpoint=http://localhost:8080/query",
+    "prebuild": "webpack --config ./scripts/webpack.gql.config.js --queries=./src",
+    "run": "ts-node src/index.ts"
+  },
   "dependencies": {
-    "typescript": "^3.3.3333"
+    "typescript": "^3.3.3333",
+    "webpack": "^4.29.6"
+  },
+  "devDependencies": {
+    "graphql": "^14.1.1",
+    "graphql-code-generator": "^0.18.0",
+    "graphql-codegen-typescript-common": "^0.18.0",
+    "graphql-codegen-typescript-server": "^0.18.0",
+    "ramda": "^0.25.0",
+    "webpack-cli": "^3.3.0",
+    "webpack-graphql-loader": "^1.0.0"
   }
 }
