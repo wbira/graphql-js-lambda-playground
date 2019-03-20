@@ -8,16 +8,15 @@
     "prebuild": "webpack --config ./scripts/webpack.gql.config.js --queries=./src",
     "run": "ts-node src/index.ts"
   },
-  "dependencies": {
-    "typescript": "^3.3.3333",
-    "webpack": "^4.29.6"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "typescript": "^3.3.3333",
     "graphql": "^14.1.1",
     "graphql-code-generator": "^0.18.0",
     "graphql-codegen-typescript-common": "^0.18.0",
     "graphql-codegen-typescript-server": "^0.18.0",
     "ramda": "^0.25.0",
+    "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0",
     "webpack-graphql-loader": "^1.0.0"
   }
